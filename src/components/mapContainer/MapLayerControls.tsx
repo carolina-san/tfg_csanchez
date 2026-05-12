@@ -68,7 +68,7 @@ export default function MapControls({ sensorsVisible, heatmapVisible, heatmapTyp
                         role="radio"
                     >
                         <Droplets className="icon shrink-0" aria-hidden="true" />
-                        <span className={`font-semibold text-sm  ${heatmapType === 'Humedad' ? "text-texto-oscuro" : "text-texto-claro group-hover:text-texto"}`}>Humedad</span>
+                        <span className={`font-semibold text-sm sm:text-base ${heatmapType === 'Humedad' ? "text-texto-oscuro" : "text-texto-claro group-hover:text-texto"}`}>Humedad</span>
                     </button>
                     <button
                         onClick={() => onChangeHeatmapType('Ruido')}
@@ -77,7 +77,7 @@ export default function MapControls({ sensorsVisible, heatmapVisible, heatmapTyp
                         role="radio"
                     >
                         <Volume2 className="icon shrink-0" aria-hidden="true" />
-                        <span className={`font-semibold text-sm ${heatmapType === 'Ruido' ? "text-texto-oscuro" : "text-texto-claro group-hover:text-texto"}`}>Ruido</span>
+                        <span className={`font-semibold text-sm sm:text-base ${heatmapType === 'Ruido' ? "text-texto-oscuro" : "text-texto-claro group-hover:text-texto"}`}>Ruido</span>
                     </button>
                 </div>
             )}
