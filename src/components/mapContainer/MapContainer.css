@@ -1,0 +1,13 @@
+@import "../../index.css";
+
+.bg-spinner {
+    @apply absolute inset-0 z-50 flex items-center justify-center backdrop-blur-[2px] pointer-events-none;
+}
+
+.icon {
+    @apply w-4 h-4 sm:w-5 sm:h-5;
+}
+
+.btn-control-mapa {
+    @apply flex items-center justify-center bg-panel text-texto p-2 sm:p-3 rounded-full shadow-md border border-1 border-panel-oscuro hover:bg-panel-oscuro transition-all pointer-events-auto;
+}

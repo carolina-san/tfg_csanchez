@@ -1,0 +1,98 @@
+@import './index.css';
+
+html,
+body,
+#root {
+  @apply font-inter m-0 p-0 w-full h-dvh overflow-hidden bg-[var(--color-bg)];
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-poppins font-semibold m-0;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+button {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+@layer components {
+
+  /* Contenedores y Layout */
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  /* Tarjetas y Superficies */
+  .card {
+    @apply bg-panel shadow-sm rounded-2xl;
+  }
+
+  /* Tipografía */
+  .text-title {
+    @apply text-xl font-bold text-texto-oscuro;
+  }
+
+  .text-subtitle {
+    @apply text-sm font-bold text-texto-oscuro uppercase tracking-wider;
+  }
+
+  .text-value {
+    @apply text-3xl font-black text-texto-oscuro;
+  }
+
+  /* Formularios */
+  .input-select {
+    @apply bg-panel pl-3 sm:pl-4 pr-8 sm:pr-10 py-2 rounded-full shadow-sm appearance-none outline-none hover:bg-panel-oscuro text-texto-oscuro transition-colors cursor-pointer;
+  }
+
+  .input-select-chart {
+    @apply bg-bg text-sm px-3 py-1 rounded-full appearance-none outline-none hover:bg-panel-oscuro text-texto-oscuro transition-colors cursor-pointer;
+  }
+
+  .input-select::-webkit-calendar-picker-indicator,
+  .input-select-chart::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    margin-left: -6px;
+  }
+
+  .dark .input-select::-webkit-calendar-picker-indicator,
+  .dark .input-select-chart::-webkit-calendar-picker-indicator {
+    filter: invert(1) brightness(1);
+  }
+
+  .tooltip {
+    @apply !bg-panel !border-white/20 rounded-xl;
+  }
+}

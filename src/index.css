@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+:root {
+    --bg: #F0EEED;
+    --panel: #FDFdfd;
+    --panel-oscuro: #E1E1E1;
+    --texto: #2E2836;
+    --texto-oscuro: #2E2836;
+    --texto-claro: #BDBBBA;
+    --acento: #FC4C69;
+    --acento-claro: #FF91A4;
+    --acento-azul: #8AC5E5;
+    --azul-oscuro: #3f9bcd;
+}
+
+.dark {
+    --bg: #17141B;
+    --panel: #2E2836;
+    --panel-oscuro: #453E50;
+    --texto: #F0EEED;
+    --texto-oscuro: #FFFFFF;
+    --texto-claro: #808080;
+    --acento: #FF91A4;
+    --acento-claro: #FC4C69;
+    --acento-azul: #3f9bcd;
+    --azul-oscuro: #8AC5E5;
+}
+
+@theme {
+    --color-bg: var(--bg);
+    --color-panel: var(--panel);
+    --color-panel-oscuro: var(--panel-oscuro);
+    --color-acento: var(--acento);
+    --color-acento-claro: var(--acento-claro);
+    --color-acento-azul: var(--acento-azul);
+    --color-azul-oscuro: var(--azul-oscuro);
+    --color-texto: var(--texto);
+    --color-texto-oscuro: var(--texto-oscuro);
+    --color-texto-claro: var(--texto-claro);
+
+    --font-inter: "Inter", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
