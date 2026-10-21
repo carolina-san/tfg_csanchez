@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/sensingtools-api/:path*",
+      "destination": "/api/proxy?path=:path*"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
