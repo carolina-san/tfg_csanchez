@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { SensorDevice, SensorReading } from '../types/sensor';
 import { getSensorInfo } from '../utils/sensorUtils';
 
-const apiUrl = "https://platon.grc.upv.es/sensingtools-api/api/user-hard-sensors/cVDqRI0BmK9pjniFeoOV/data";
+const apiUrl = "/sensingtools-api/api/user-hard-sensors/cVDqRI0BmK9pjniFeoOV/data";
 
 //Recoge los últimos valores de todos los sensores
 export const getLatestValues = async (): Promise<SensorDevice[]> => {

@@ -25,6 +25,13 @@ export default defineConfig({
   ],
   server: {
     allowedHosts: true,
+    proxy: {
+      '/sensingtools-api': {
+        target: 'https://platon.grc.upv.es',
+        changeOrigin: true,
+        secure: false,
+      },
+    },
   },
   build: {
     modulePreload: false,
